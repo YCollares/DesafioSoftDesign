@@ -1,0 +1,12 @@
+Prova Teste de API
+Questão 01:
+Nessa questão foi realizado o comando GET para verificação dos nomes de usuário foi automatizado para essa request a response esperada e se o limite de usuários é de 30 por página a validação de campos é feita na conferência se cada um dos campos está presente no JSON de resposta
+
+Questão 02:
+Nessa questão foi realizado o comando de POST para autenticação do usuário, temos o body da request mencionada na requisição cURL, desta requisição é extraída o body para autenticação, na documentação é apresentado que a resposta esperada para esse caso é 200, não 201 como mencionado no desafio, para isso foi realizado a conferência da respostar ser 200 e os campos mencionados estarem presentes no JSON de resposta
+
+Questão 03:
+Para criação do produto é realizada uma requisição POST, utilizando da request cURL dada no desafio é retirado o body para request no Postman, todas as request são em ordem e para ela é utilizada as tokens do teste da questão 02, para isso é utilizado no paramêtro de Authorization do Postman a opção de "Inherit auth from parent", caso fosse necessária poderíamos no teste anterior guardar essa token em uma variável e então utilizar ela para realizar as validações necessárias para um resquest com sucesso na hora da adição de um novo produto
+
+Questão 04:
+Essa request é realizada um GET para recebermos os dados de um usuário em específico, nesse caso é demonstrado pelo numério após "user/n" onde "n" é o id do usuário em questão, para validarmos se está sendo correto é possível utilizar um teste aonde o valor que for informado na hora do request pode ser atualizado, manualmente, no teste para que ele faça a conferência que o usuário daquele id está apresentado na response
